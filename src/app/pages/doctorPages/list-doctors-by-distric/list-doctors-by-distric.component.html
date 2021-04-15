@@ -1,0 +1,14 @@
+<div class="container-doctor">
+    <h2 class="container-doctor-title">Lista de doctores</h2>
+    <div >
+        <div class="form-group">
+            <label for="distric">Select distric</label>
+            <select class="form-control" id="distric"  [(ngModel)]="districSelect" name="districSelect">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option *ngFor="let distric of districsList" [value]="distric">{{distric}}</option>
+            </select>
+            <button class="btn btn-primary ntb-find" (click)="findDoctorsByDistric()">find</button>
+        </div>
+    </div>
+    <app-body-table-filter-doctor [doctorsList]="doctorsList"></app-body-table-filter-doctor>
+</div>

@@ -1,0 +1,17 @@
+<div class="container-doctor">
+    <h2 class="container-doctor-title">Lista de doctores</h2>
+
+    <div >
+        <form class="form-group">
+            <label for="distric">Select distric</label>
+            <select class="form-control" id="distric"  [(ngModel)]="rankingSelect" name="rankingSelect">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option *ngFor="let ranking of rankingsList" [value]="ranking">{{ranking}}</option>
+            </select>
+            <button class="btn btn-primary ntb-find" (click)="findDoctorsByRanking()">find</button>
+        </form>
+    </div>
+
+    <app-body-table-filter-doctor [doctorsList]="doctorsList"></app-body-table-filter-doctor>
+
+</div>

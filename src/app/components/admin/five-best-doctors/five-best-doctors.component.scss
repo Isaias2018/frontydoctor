@@ -1,0 +1,44 @@
+.best-doctor, .best-doctor-doctor, .best-doctor-information, .best-doctor-ranking {
+    display: flex;
+    align-items: center;
+}
+
+.best-doctor {
+    border-bottom: 1px solid #aaa;
+    justify-content: space-between;
+    &-information {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    &-ranking {
+        margin-left: 24px;
+        justify-self: end;
+    }
+
+    &-stars {
+        margin-left: 16px;
+    }
+}
+
+
+p {
+    margin-bottom: 0;
+}
+
+.bi-person-circle {
+    width: 48px;
+    height: 48px;
+    display: none;
+
+    @media screen and (min-width: 1000px) {
+        display: block;
+    }
+}
+
+
+.bi-star-fill {
+    width: 24px;
+    height: 24px;
+}

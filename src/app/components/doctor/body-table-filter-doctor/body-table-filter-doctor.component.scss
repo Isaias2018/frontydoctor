@@ -1,0 +1,14 @@
+.delete-with-responsive {
+    display: none;
+    @media screen and (min-width: 650px) {
+        display: table-cell;
+    }
+}
+
+.table{
+    font-size: 10px;
+    @media screen and (min-width: 400px) {
+        font-size: 14px;
+    }
+
+}

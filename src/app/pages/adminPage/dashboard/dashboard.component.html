@@ -1,0 +1,14 @@
+<div class="dashboard">
+    <div class="dashboard-container">
+        <h2 class="dashboard-container-title">Cantidad de usuarios registrados: 20</h2>
+        <div class="dashboard-container-container">
+            <app-cantidad-de-usuarios [userCount] = "userCount.doctores" [totalUserCount] = "userCount.usuarios" [role] = "roleDoctor"></app-cantidad-de-usuarios>
+            <app-cantidad-de-usuarios [userCount] = "userCount.pacientes" [totalUserCount] = "userCount.usuarios" [role] = "rolePacient"></app-cantidad-de-usuarios>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <app-five-best-doctors [fiveBestDoctor] = "fiveBestDoctor"></app-five-best-doctors>
+    </div>
+    
+</div>

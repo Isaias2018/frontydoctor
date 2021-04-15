@@ -1,0 +1,36 @@
+.dashboard {
+    padding: 24px;
+}
+
+.dashboard-container {
+    padding: 16px;
+    width: 100%;
+    padding: 24px;
+    background: white;
+
+    &-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 16px;
+
+    }
+    
+    &-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    &:first-child {
+        margin-bottom: 24px;
+    }
+    
+    @media screen and (min-width:650px) {
+        &-container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 16px;
+            
+        }
+        
+    }
+}
