@@ -4,10 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class RankingService {
-  
+
   private rankingList: Array<number> = new Array<number>();
 
-  constructor() { 
+  constructor() {
     this.rankingList = [1, 2, 3, 4, 5]
   }
 
