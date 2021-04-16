@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  private url: string = "http://doctorfast-backend.herokuapp.com";
+  private url: string = "https://doctorfast-backend.herokuapp.com";
   private urlAdmin: string = "http://doctorfast-backend.herokuapp.com/admin";
   constructor() { }
 
