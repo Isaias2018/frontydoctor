@@ -3,7 +3,7 @@
 
     <div >
         <form class="form-group">
-            <label for="distric">Select distric</label>
+            <label for="distric">Select ranking</label>
             <select class="form-control" id="distric"  [(ngModel)]="rankingSelect" name="rankingSelect">
                 <option value="" selected disabled hidden>Choose here</option>
                 <option *ngFor="let ranking of rankingsList" [value]="ranking">{{ranking}}</option>
